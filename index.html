@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="icon" href="img/logo.ico">
+
+    <title>Cajon Materialize</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            background: url(img/main.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 720px;
+        }
+
+        @media screen and (max-width: 670px) {
+            header {
+                min-height: 500px;
+            }
+        }
+
+        .brand-logo {
+            margin-left: 20px;
+        }
+
+        .section {
+            padding-top: 5vw;
+            padding-bottom: 5vw;
+        }
+
+        @media screen and (max-width: 670px) {
+            .parallax-container {
+                height: 250px;
+            }
+        }
+
+        nav {
+            background: rgba(234, 231, 219, 0.75);
+        }
+
+        ul.sidenav {
+            width: 100%;
+        }
+
+        .close-btn-center {
+            margin: 5vw;
+        }
+
+        .social {
+            margin: 1vw;
+        }
+
+        img.logo {
+            border: none;
+            border-radius: 50%;
+            max-height: 40px;
+            margin: 10px;
+        }
+
+        .carousel-container {
+            width: 500px;
+            /* margin: 40px auto; */
+            /* border: 2px grey solid; */
+        }
+
+        /* label focus color */
+        .input-field input[type="email"]:focus+label,
+        textarea:focus+label {
+            color: #ffab00 !important;
+        }
+
+        /* icon prefix focus color */
+        .input-field .prefix.active {
+            color: #ffab00;
+        }
+
+        /* label underline focus color */
+        .input-field input[type="email"]:focus,
+        textarea:focus {
+            border-bottom: 1px solid #ffab00 !important;
+            box-shadow: 0 1px 0 0 #ffab00 !important;
+        }
+
+        .input-field input[type="checkbox"]:checked {
+            border: 2px solid #ff9800;
+            background-color: #ff9800;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <header>
+        <div class="navbar-fixed">
+            <nav class="nav-wrapper">
+                <div class="container">
+                    <a href="#" class="brand-logo grey-text text-darken-3 hide-on-med-and-up">Cajón</a>
+                    <a href="#" class="brand-logo grey-text text-darken-3 left hide-on-small-only">Cajón</a>
+
+                    <a href="#" class="sidenav-trigger hide-on-med-and-up" data-target="mobile-menu">
+                        <!-- <a href="#" class="sidenav-trigger" data-target="mobile-menu"> -->
+                        <i class="material-icons grey-text text-darken-3">menu</i>
+                    </a>
+                    <!-- <ul class="right hide-on-med-and-down"> -->
+                    <ul class="right hide-on-small-only">
+                        <li><a href="#projects" class="grey-text text-darken-3">Projects</a></li>
+                        <li><a href="#about" class="grey-text text-darken-3">About Me</a></li>
+                        <li><a href="#digital" class="grey-text text-darken-3">Digital Stuff</a></li>
+                        <li><a href="#contact" class="grey-text text-darken-3">Contact</a></li>
+                        <li></li>
+                        <li><a href="https://www.instagram.com/tama.ba/"
+                                class="tooltipped btn-floating btn-small grey darken-2" data-tooltip="mi instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a></li>
+                        <li><a href="https://www.facebook.com/" class="btn-floating btn-small grey darken-2">
+                                <i class="fab fa-facebook"></i>
+                            </a></li>
+                        <li><a href="https://www.twitter.com/" class="btn-floating btn-small grey darken-2">
+                                <i class="fab fa-twitter"></i>
+                            </a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <ul class="sidenav grey lighten-2 slide-out center" id="mobile-menu">
+
+            <div class="row grey lighten-1">
+                <div class="col s10">
+                    <li>
+                        <div class="user-view center">
+                            <a href="#"><img class="circle" src="img/logo.jpg"></a>
+                        </div>
+                    </li>
+                </div>
+                <div class="col s1 close-btn-center">
+                    <li><a class="sidenav-close" href="#!">
+                            <div class="btn-floating btn-small red lighten-2 waves-effect waves-light right">
+                                <i class="material-icons">close</i>
+                            </div>
+                        </a></li>
+                </div>
+            </div>
+
+            <li><a href="#projects">Projects</a></li>
+
+            <li><a href="#about">About me</a></li>
+
+            <li><a href="#digital">Digital Stuff</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+            <li>
+                <div class="btn-floating btn-small grey darken-2 social">
+                    <a href=" https://www.instagram.com/tama.ba/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="btn-floating btn-small grey darken-2 social">
+                    <a href="https://www.facebook.com/">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+                <div class="btn-floating btn-small grey darken-2 social">
+                    <a href="https://www.twitter.com/" class="btn-floating btn-small grey darken-2">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </li>
+
+
+        </ul>
+    </header>
+
+    <!-- projects / grid -->
+    <section class="container section scrollspy" id="projects">
+        <div class="row valign-wrapper">
+            <div class="col s12 m6 l4">
+                <img src="img/draw.jpg" alt="drawing" class="responsive-img z-depth-2 materialboxed">
+            </div>
+            <div class="col s12 m6 l6 offset-l1">
+                <h2 class="grey-text text-darken-4">Drawings</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita veniam eaque fugit vero sint,
+                    corrupti consequatur excepturi odit aspernatur quam ipsum asperiores doloribus dicta voluptates
+                    sequi a tenetur reiciendis id.</p>
+            </div>
+        </div>
+        <div class="row valign-wrapper">
+            <div class="col s12 m6 l6 right-align">
+                <h2 class="grey-text text-darken-4 ">Cement</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita veniam eaque fugit vero sint,
+                    corrupti consequatur excepturi odit aspernatur quam ipsum asperiores doloribus dicta voluptates
+                    sequi a tenetur reiciendis id.</p>
+            </div>
+            <div class="col s12 m6 l4">
+                <img src="img/cement.jpg" alt="drawing" class="responsive-img z-depth-2 materialboxed">
+            </div>
+        </div>
+        <br>
+        <div class="row valign-wrapper">
+            <div class="col s12 m6 l4">
+                <img src="img/animation.gif" alt="drawing" class="responsive-img z-depth-2 materialboxed">
+            </div>
+
+            <div class="col s12 m6 l6 offset-l1">
+                <h2 class="grey-text text-darken-4">Projects</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita veniam eaque fugit vero sint,
+                    corrupti consequatur excepturi odit aspernatur quam ipsum asperiores doloribus dicta voluptates
+                    sequi a tenetur reiciendis id.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- parallax -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/diamante-1.jpg" alt="stars">
+        </div>
+    </div>
+
+    <!-- about / tabs -->
+    <section class="container section scrollspy" id="about">
+        <div class="row">
+            <div class="col s12 l4">
+                <h2 class="grey-text text-dark-4">What I do...</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere nemo necessitatibus, eos expedita
+                    voluptatum nesciunt repudiandae sint. Aut minima impedit quibusdam. Quibusdam exercitationem illo
+                    aut asperiores mollitia inventore voluptas pariatur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet suscipit, fugiat maxime libero
+                    quibusdam cumque? Debitis tempora, eaque ratione nisi, veritatis aspernatur odio totam perspiciatis
+                    atque obcaecati assumenda aut! Dignissimos?</p>
+            </div>
+            <div class="col s12 l6 offset-l2">
+                <ul class="tabs">
+                    <li class="tab col s6">
+                        <a href="#photography" class="grey-text text-darken-4">Photograpy</a>
+                    </li>
+                    <li class="tab col s6">
+                        <a href="#editing" class="grey-text text-darken-4">Editing</a>
+                    </li>
+                </ul>
+                <div class="col s12" id="photography">
+                    <p class="flow-text grey-text text-darken-4">
+                        PHOTOGRAPHY
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quae neque esse quidem rem
+                        repudiandae obcaecati tenetur deleniti assumenda temporibus qui odit distinctio illum?
+                        Perferendis molestiae nostrum harum nobis omnis?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem id blanditiis voluptas
+                        aspernatur quos cumque tenetur qui delectus repellat porro amet deserunt facilis, asperiores,
+                        deleniti minus nisi officia autem recusandae?</p>
+
+                </div>
+                <div class="col s12" id="editing">
+                    <p class="flow-text grey-text text-darken-4">
+                        EDITING
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quae neque esse quidem rem
+                        repudiandae obcaecati tenetur deleniti assumenda temporibus qui odit distinctio illum?
+                        Perferendis molestiae nostrum harum nobis omnis?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem id blanditiis voluptas
+                        aspernatur quos cumque tenetur qui delectus repellat porro amet deserunt facilis, asperiores,
+                        deleniti minus nisi officia autem recusandae?</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- parallax -->
+    <div class="parallax-container hide-on-small-only">
+        <div class="parallax">
+            <img src="img/alin-paloma.png" alt="project">
+        </div>
+    </div>
+    <div class="parallax-container hide-on-med-and-up">
+        <div class="parallax">
+            <img src="img/stars.jpg" alt="project">
+        </div>
+    </div>
+
+    <!-- carousel -->
+    <section class="container section scrollspy" id="digital">
+
+        <div class="row valign-wrapper">
+
+            <div class="col s12 m4 l4">
+                <h2 class="grey-text text-darken-4">Digital Stuff</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita veniam eaque fugit vero sint,
+                    corrupti consequatur excepturi odit aspernatur quam ipsum asperiores doloribus dicta voluptates
+                    sequi a tenetur reiciendis id.</p>
+            </div>
+            <div class="col s12 m6 l6 offset-l2">
+
+                <div class="container carousel-container">
+                    <div class="carousel carousel-slider center">
+                        <a class="carousel-item grey lighte-4" href="#one!"><img src="img/cabrapez.png"></a>
+                        <a class="carousel-item grey lighten-4" href="#two!"><img src="img/shun.jpg"></a>
+                        <a class="carousel-item grey lighten-4" href="#three!"><img src="img/alin-paloma.png"></a>
+                        <a class="carousel-item grey lighten-4" href="#four!"><img src="img/diamante-1.jpg"></a>
+                        <a class="carousel-item grey lighten-4" href="#five!"><img src="img/mujer-ojos.jpg"></a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- parallax -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/stars.jpg" alt="project">
+        </div>
+    </div>
+
+    <!-- contact form -->
+    <section class="container section scrollspy" id="contact">
+        <div class="row">
+            <div class="col s12 l5">
+                <h2 class="grey-text">Get In Touch</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="col s12 l5 offset-l2">
+                <form action="">
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input type="email" id="email">
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">message</i>
+                        <textarea class="materialize-textarea" name="message" id="message"></textarea>
+                        <label for="message">Your Message...</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" class="datepicker" id="date">
+                        <label for="date">Choose a date you need me for...</label>
+                    </div>
+                    <div class="input-field">
+                        <p>Services required...</p>
+                        <p>
+                            <label>
+                                <input type="checkbox">
+                                <span>Photography</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox">
+                                <span>Editing</span>
+                            </label>
+                        </p>
+                    </div>
+                    <div class="input-field center">
+                        <button class="btn deep-orange accent-2 waves-effect waves-light">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- footer -->
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5>About me</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero fuga culpa at voluptates
+                        nemo.
+                        Ipsa iste nisi, reiciendis inventore nihil.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero fuga culpa at voluptates
+                        nemo.
+                        Ipsa iste nisi, reiciendis inventore nihil.
+                    </p>
+                </div>
+                <div class="col s12 l4 offset-l2">
+                    <h5>Conect</h5>
+                    <ul>
+                        <li><a href="https://www.instagram.com/tama.ba/" class="grey-text text-lighten-3"
+                                target="_blank">Instagram</a>
+                        </li>
+                        <li><a href="" class="grey-text text-lighten-3" target="_blank">Facebook</a></li>
+                        <li><a href="" class="grey-text text-lighten-3" target="_blank">Twitter</a></li>
+                        <li><a href="" class="grey-text text-lighten-3" target="_blank">Linkedin</a></li>
+
+                        <li><img src="img/logo2.jpg" alt="logo" class="logo"></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-copyright grey darken-4">
+            <div class="container center-align">&copy; 2019 Cajón</div>
+        </div>
+
+    </footer>
+
+
+    <!-- SCRIPTS -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.tooltipped').tooltip();
+            $('.datepicker').datepicker({
+                disableWeekends: true
+            });
+            $('.scrollspy').scrollSpy();
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true,
+                indicators: true,
+                noWrap: true
+
+            });
+        });
+    </script>
+
+</body>
+
+</html>
